@@ -10,5 +10,5 @@
   },
   "jsx": "react-jsx",
   "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*","data"]
+  "exclude": ["node_modules", "**/__tests__/*", "data"]
 }

@@ -1,6 +1,6 @@
 # activate-menu-item
 
-This package controls which item in sidebar menu must be open or selected base on route even after refreshing page and give you a good structure for creating sidebar menu
+This package controls which item must be open in sidebar menu or selected base on route even after refreshing page and gives you a good structure for creating sidebar menu
 
 ## Demo
 
@@ -65,12 +65,10 @@ function App() {
     <Menu defaultOpenKeys={openKeysItems} selectedKeys={[activePath]}>
       <SubMenu key="information" title="user information">
         <Menu.Item key="/info/personalInfo">
-          {" "}
-          user personal information{" "}
+          user personal information
         </Menu.Item>
         <Menu.Item key="/info/businessInfo">
-          {" "}
-          user business information{" "}
+          user business information
         </Menu.Item>
       </SubMenu>
     </Menu>
@@ -80,10 +78,10 @@ function App() {
 
 ## create sidebar
 
-you can use NavigationList to create sidebar with createSidebar function
+you can use NavigationList to create sidebar with createSidebar function.
 this is helpful for bigger NavigationList
 
-for submenu you must provide id property and for menu items you must add path property in NavigationList
+you must provide id property for submenu and for menu items you must add path property in NavigationList
 
 ```javascript
 import { createSidebar } from "activate-menu-item";
@@ -95,17 +93,16 @@ import "antd/lib/menu/style/css";
 const { SubMenu } = Menu;
 
 const ItemSidebar = ({ data, ...others }) => {
-  // dont forget pass others data to return component before key property
+  // dont forget to pass others data to return component before key property
   return (
     <Menu.Item {...others} key={data.path}>
-      {" "}
-      {data.title}{" "}
+      {data.title}
     </Menu.Item>
   );
 };
 
 const SubmenuSidebar = ({ data, ...others }) => {
-  // dont forget pass others data to return component before key property
+  // dont forget to pass others data to return component before key property
   return (
     <SubMenu {...others} key={data.id} title={data.title}>
       {others.children}

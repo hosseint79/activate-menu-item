@@ -1,6 +1,6 @@
 {
   "name": "activate-menu-item",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a package for select and open menu items base on route ",
   "main": "./dist/index.js",
   "dependencies": {
