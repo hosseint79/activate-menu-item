@@ -16,6 +16,14 @@
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "sidebar",
+    "menu",
+    "ant-menu",
+    "open-sidebar",
+    "open-menu"
+  ],
+  "homepage": "https://github.com/hosseint79/activate-menu-item",
   "author": "hossein talebi",
   "license": "MIT"
 }
